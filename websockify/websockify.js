@@ -124,14 +124,14 @@ http_request = function (request, response) {
 };
 
 // Select 'binary' or 'base64' subprotocol, preferring 'binary'
-selectProtocol = function(protocols, callback) {
+selectProtocol = function(protocols) {
     if (protocols.indexOf('binary') >= 0) {
-        callback(true, 'binary');
+        return 'binary';
     } else if (protocols.indexOf('base64') >= 0) {
-        callback(true, 'base64');
+        return 'base64';
     } else {
         console.log("Client must support 'binary' or 'base64' protocol");
-        callback(false);
+        return false;
     }
 }
 
