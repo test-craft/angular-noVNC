@@ -1,6 +1,6 @@
 {
   "name": "testcraft-angular-no-vnc",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "noVNC port for angular.js",
   "main": "Gulpfile.js",
   "scripts": {
